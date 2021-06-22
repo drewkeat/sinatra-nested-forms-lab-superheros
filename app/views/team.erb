@@ -1,3 +1,9 @@
-
-
-
+<h1>New Super Team!</h1>
+<b>Team Name: </b> <%=@team.name%><br>
+<b>Team Motto: </b> <%=@team.motto%><br>
+<%@heroes.each.with_index(1) do |hero, number|%>
+<h2>Hero <%=number%></h2>
+<b>Hero Name: </b> <%=hero.name%><br>
+<b>Hero Power: </b> <%=hero.power%><br>
+<b>Hero Biography: </b> <%=hero.bio%><br>
+<%end%>
